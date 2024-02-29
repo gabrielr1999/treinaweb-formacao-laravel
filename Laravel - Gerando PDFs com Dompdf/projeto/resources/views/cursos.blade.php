@@ -1,0 +1,19 @@
+<h1>Lista de Cursos</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Curso</th>
+            <th>Versão</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($cursos as $curso)
+            <tr>
+                <td>{{ $curso['nome'] }}</td>
+                <td>{{ $curso['versao'] }}</td>
+            </tr>
+        @endforeach
+    </tbody>
+</table>
